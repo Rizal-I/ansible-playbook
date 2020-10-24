@@ -16,3 +16,6 @@
   template:
     src: wp-config.php
     dest: /var/www/html/wordpress/
+  notify:
+  - Restart nginx
+  - Restart php7.2-fpm

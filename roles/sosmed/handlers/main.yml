@@ -1,8 +1,8 @@
-- name: restart nginx
+- name: Restart nginx
   service:
     name: nginx
     state: restarted
-- name: restart php-fpm
+- name: Restart php7.2-fpm
   service:
     name: php7.2-fpm
     state: restarted
