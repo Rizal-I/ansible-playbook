@@ -11,3 +11,7 @@ pesbuk_db_hostname:
 # aws key
 access_key:
 secret_key:
+# export kops
+bucket_name:
+cluster_name:
+state_store:
