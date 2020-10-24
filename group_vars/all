@@ -1,10 +1,13 @@
 # WordPress database settings, change with correct value
-wp_db_name: wp
-wp_db_user: admin
-wp_db_password: xxxnnn777
-wp_db_hostname: database.ccfsr5r9whrc.ap-southeast-1.rds.amazonaws.com
+wp_db_name: 
+wp_db_user: 
+wp_db_password: 
+wp_db_hostname: 
 # config pesbuk
-pesbuk_db_name: sosmed
-pesbuk_db_user: admin
-pesbuk_db_password: xxxnnn777
-pesbuk_db_hostname: database.ccfsr5r9whrc.ap-southeast-1.rds.amazonaws.com
+pesbuk_db_name: 
+pesbuk_db_user: 
+pesbuk_db_password: 
+pesbuk_db_hostname: 
+# aws key
+access_key:
+secret_key:
