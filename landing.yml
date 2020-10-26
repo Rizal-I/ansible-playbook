@@ -1,9 +1,8 @@
-- name: Install WordPress
+- name: tunggu sekitar 3 menit
   hosts: bastion
   remote_user: ubuntu
   become: yes
   become_method: sudo
   roles:
-    - nginx
-    - php
-    - wp
+    - ingress
+    - landing-pages

@@ -1,6 +1,6 @@
 Beberapa catatan sebelum aply file yml
 
-isi file all di folder group_vars dengan variable milik pribadi
+isilah file bernama "all" yang berada difolder "group_vars" dengan variable milik pribadi
 
 rubah target di file hosts ~/ansible-playbook/hosts  rubah directory ssh milik target dgn permision 400
 

@@ -9,8 +9,8 @@ pesbuk_db_user:
 pesbuk_db_password: 
 pesbuk_db_hostname: 
 # aws cli
-access_key: 
-secret_key: 
+access_key:
+secret_key:
 region: 
 # export kops
 bucket_name: 
