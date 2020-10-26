@@ -1,0 +1,7 @@
+- name: delete k8s
+  hosts: bastion
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+  roles:
+    - deletek8s
