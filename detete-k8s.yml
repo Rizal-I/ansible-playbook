@@ -1,4 +1,4 @@
-- name: delete k8s
+- name: Tunggu sekitar 5 menit
   hosts: bastion
   remote_user: ubuntu
   become: yes

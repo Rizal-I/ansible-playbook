@@ -1,4 +1,4 @@
-- name: Install k8s
+- name: Tunggu sekitar 10 menit
   hosts: bastion
   remote_user: ubuntu
   become: yes
