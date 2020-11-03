@@ -11,9 +11,12 @@
     update_cache: yes
 - name: install dependenci jenkins    
   apt:
-    pkg:
-    - openjdk-8-jdk
-    - jenkins      
+    name: openjdk-8-jdk
+    update_cache: yes
+- name: install dependenci jenkins    
+  apt:
+    name: jenkins
+    update_cache: yes     
 - name: start jenkins
   service:
     name: jenkins

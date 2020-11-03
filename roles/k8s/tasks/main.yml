@@ -1,4 +1,5 @@
 - name: install k8s
-  command: kops create cluster --zones=ap-southeast-1a --node-count=3 --master-count=1 --node-size=t2.micro --master-size=t2.micro --name={{ cluster_name }} --state={{ state_store }} --ssh-public-key=~/.ssh/id_rsa.pub 
+  shell: kops create cluster --zones=ap-southeast-1a --node-count=3 --master-count=1 --node-size=t2.micro --master-size=t2.micro --name={{ cluster_names }} --state={{ state_store }} --ssh-public-key=~/.ssh/id_rsa.pub 
+  
 - name: update cluster
-  command: kops update cluster --name {{ cluster_name }} --state {{ state_store }} --yes
+  command: kops update cluster --name {{ cluster_names }} --state {{ state_store }} --yes

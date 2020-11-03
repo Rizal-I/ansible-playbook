@@ -9,10 +9,11 @@ pesbuk_db_user:
 pesbuk_db_password: 
 pesbuk_db_hostname: 
 # aws cli
-access_key:
-secret_key:
-region: 
+access_key: AKIAIABOQKQGGIEZ5TXQ
+secret_key: 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
+region: ap-southeast-1
 # export kops
-bucket_name: 
-cluster_name: 
-state_store: 
+bucket_name: bucketrizal
+cluster_namep: production.ridjal.com
+state_store: s3://bucketrizal
+cluster_names: staging.ridjal.com

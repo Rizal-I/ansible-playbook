@@ -7,3 +7,5 @@ rubah target di file hosts ~/ansible-playbook/hosts  rubah directory ssh milik t
 ansible -i hosts -m ping all                        #cek koneksi target
 
 asnible-playbook -i hosts *.yml                     #execute yml file
+
+ingress di install di bastion jika setelah install kubernetes cluster 
