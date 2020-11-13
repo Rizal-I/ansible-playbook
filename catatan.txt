@@ -8,4 +8,4 @@ ansible -i hosts -m ping all                        #cek koneksi target
 
 asnible-playbook -i hosts *.yml                     #execute yml file
 
-ingress di install di bastion jika setelah install kubernetes cluster 
+dependency-cluster di install di bastion jika setelah install kubernetes cluster

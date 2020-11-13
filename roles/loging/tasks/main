@@ -1,0 +1,28 @@
+- name: install efk-ns
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/efk-ns.yaml
+  args:
+    executable: /bin/bash
+- name: install elasticsearch
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/p-elasticsearch-svc.yaml
+  args:
+    executable: /bin/bash
+- name: install elasticsearch-statefulset
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/p-elasticsearch-statefulset.yaml
+  args:
+    executable: /bin/bash
+- name: install kibana
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/p-kibana-dpy.yaml
+  args:
+    executable: /bin/bash
+- name: install ekf-ingress
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/p-p-ekf-ingress.yaml
+  args:
+    executable: /bin/bash
+- name: install fluentd
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/p-fluentd-dpy.yaml
+  args:
+    executable: /bin/bash
+- name: install counter-pod
+  shell: kubectl apply -f https://raw.githubusercontent.com/Rizal-I/EFK-labs-cilsy/main/p-counter-pod.yaml
+  args:
+    executable: /bin/bash

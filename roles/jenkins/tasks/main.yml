@@ -16,7 +16,7 @@
 - name: install dependenci jenkins    
   apt:
     name: jenkins
-    update_cache: yes     
+    update_cache: yes    
 - name: start jenkins
   service:
     name: jenkins

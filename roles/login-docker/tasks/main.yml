@@ -1,0 +1,7 @@
+- name: docker login
+  command: usermod -aG docker jenkins 
+- name: grant permision
+  command: usermod -aG docker ubuntu
+- name: chmod 666
+  command: chmod 666
+# buat credentials dg id docker-login global username ddan password milik dockerhub

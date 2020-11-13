@@ -1,0 +1,3 @@
+[bastion]#kubernetes
+13.125.77.36 ansible_user=ubuntu ansible_ssh_private_key_file=/home/rizal/kr.pem
+#file ssh sudo chmod 400

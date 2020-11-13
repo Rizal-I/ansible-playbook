@@ -4,4 +4,9 @@
   become: yes
   become_method: sudo
   roles:
-    - k8s
+    - ingress
+    - namespace
+    - secret
+    - helm
+    - monitoring
+    - loging

@@ -1,0 +1,8 @@
+- name: install docker
+  apt:
+    name: docker.io
+    update_cache: yes
+- name: service start
+  service:
+    name: docker
+    state: started

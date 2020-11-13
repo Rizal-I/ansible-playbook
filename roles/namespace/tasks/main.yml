@@ -1,0 +1,8 @@
+- name: Create Namespace Staging
+  command: kubectl create namespace staging
+- name: Create Namespace monitoring
+  command: kubectl create namespace monitoring
+- name: Create Namespace production
+  command: kubectl create namespace production
+
+  # example kubectl get ingress -n=nameofnamespace

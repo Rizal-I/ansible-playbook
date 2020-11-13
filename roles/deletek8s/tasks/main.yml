@@ -1,2 +1,2 @@
 - name: delete k8s
-  command: kops delete cluster --name kops.ridjal.com --state=s3://bucketrizal --yes
+  command: kops delete cluster --name {{ cluster_names }} --state={{ state_store }} --yes

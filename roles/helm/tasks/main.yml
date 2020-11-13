@@ -1,0 +1,6 @@
+- name: install helm
+  command: curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+- name: change permision
+  command: chmod 700 get_helm.sh
+- name: bash helm.sh
+  command: bash get_helm.sh

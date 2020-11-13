@@ -4,4 +4,6 @@
   become: yes
   become_method: sudo
   roles:
-    - k8s
+    - kubectl
+    - docker
+    - login-docker

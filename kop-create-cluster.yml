@@ -4,4 +4,8 @@
   become: yes
   become_method: sudo
   roles:
+    - ssh
+    - kubectl
+    - kops
+    - awscli
     - k8s

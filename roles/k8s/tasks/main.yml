@@ -1,6 +1,19 @@
-- name: install k8s
-  shell: kops create cluster --zones=ap-southeast-1a --node-count=3 --master-count=1 --node-size=t2.micro --master-size=t2.micro --name={{ cluster_name }} --state={{ state_store }} --ssh-public-key=~/.ssh/id_rsa.pub 
+- name: export bucket_name
+  shell: export bucket_name={{ bucket_name }}
   args:
     executable: /bin/bash
+- name: export KOPS_CLUSTER_NAME
+  shell: export KOPS_CLUSTER_NAME={{ cluster_names }}
+  args:
+    executable: /bin/bash
+- name: export KOPS_STATE_STORE
+  shell: export KOPS_STATE_STORE={{ state_store }}
+  args:
+    executable: /bin/bash
+- name: install k8s
+  command: kops create cluster --node-count=2 --master-count=3 --node-size=t2.medium --master-size=t2.medium --zones=ap-northeast-2a,ap-northeast-2b,ap-northeast-2c --master-zones=ap-northeast-2a,ap-northeast-2b,ap-northeast-2c --name={{ cluster_names }} --state={{ state_store }} --ssh-public-key=~/.ssh/id_rsa.pub
+- name: update
+  apt:
+    update_cache: yes
 - name: update cluster
   command: kops update cluster --name {{ cluster_names }} --state {{ state_store }} --yes

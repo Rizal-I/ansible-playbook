@@ -11,8 +11,10 @@ pesbuk_db_hostname:
 # aws cli
 access_key: 
 secret_key: 
-region: 
+region: ap-northeast-2
 # export kops
 bucket_name: 
+cluster_names: 
 state_store: 
-cluster_name: 
+access_key: 
+secret_key: 
